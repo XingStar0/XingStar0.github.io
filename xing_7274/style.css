@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(194, 184, 184);
+    /* 注入灵魂 */
+    /* 图片自己找啦 */
+    background-image: url('./hutao.jpg');
+    background-size: cover;
+}
+
+.wrapper {
+    margin-left: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: rgba(50,50,50,.2);
+    border: 1px solid rgba(255,255,255,.9);
+    border-right: 1px solid rgba(255,255,255,.5);
+    border-bottom: 0;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+}
+
+.wrapper h2 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    /* 设置点击无效 */
+    pointer-events: none;
+    color: #fff;
+    transition: .5s;
+}
+
+.input-box input:hover~label {
+    top: 5px;
+    font-size: 1.1em;
+    color: rgba(255,255,255,.5);
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 45px;
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 8px;
+    line-height: 60px;
+    transition: .5s;
+}
+
+.input-box span i:nth-child(2) {
+    opacity: 0;
+}
+
+.input-box input:hover~span i:nth-child(1) {
+    opacity: 0;
+}
+.input-box input:hover~span i:nth-child(2) {
+    opacity: 1;
+    font-size: 1.1em;
+}
+
+.remember-forgot {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    color: #fff;
+    transition: .5s;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    display: inline-block;
+    height: 25px;
+    color: #fff;
+    transition: .5s;
+}
+
+.remember-forgot a:hover {
+    color: rgba(255,255,255,.5);
+    border-bottom: 1px solid #fff;
+}
+
+.remember-forgot label input {
+    accent-color: rgba(135,100,78);
+    margin-right: 3px;
+}
+
+.wrapper button {
+    width: 320px;
+    height: 45px;
+    border: none;
+    background-color: rgba(135,100,78);
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    transition: .5s;
+}
+
+.wrapper button:hover {
+    box-shadow: 0 0 15px #555;
+}
+
+.register-link {
+    font-size: 0.9em;
+    margin: 25px 0 10px;
+}
+
+.register-link a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    height: 25px;
+    transition: .5s;
+}
+
+.register-link a:hover {
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    font-size: 1.1em;
+}
